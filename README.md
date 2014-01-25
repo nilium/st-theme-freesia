@@ -33,11 +33,13 @@ And you should be good to go.
 Options
 ------------------------------------------------------------------------------
 
-There are currently three options you should probably be aware of:
+There are currently four options you should probably be aware of:
 
  - `highlight_modified_tabs` — If `true`, Freesia will highlight modified / dirty tabs. Otherwise, tabs have only two states: active and inactive. I recommend turning this on because it's handy.
 
 - `freesia_large_tabs` and `freesia_small_tabs` — Only one of these should be set to true at a time. If both are set to true, small tabs win out. This simply changes the height of tabs and font size of tab labels. Does nothing special, but might be handy for people with lousy eyes and limited screen space, respectively.
+
+- `freesia_soft_tab_marker` — If set to true, the colored status lines in tabs are blurred and softened a bit. It was kind of an accident originally, but it looked neat, so I made it optional.
 
 
 Notes

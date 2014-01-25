@@ -630,7 +630,7 @@
 
     {
         "class": "tab_control",
-        "settings": ["soft_tab_marker"],
+        "settings": ["freesia_soft_tab_marker"],
         "layer3.texture": "Theme - Freesia/assets/tabs/mark-soft.png"
     },
 
