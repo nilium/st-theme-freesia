@@ -705,14 +705,6 @@
         "shadow_offset": [0, 0]
     },
 
-    {
-        "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
-        "fg": [33, 35, 38],
-        "shadow_color": [0, 0, 0, 0],
-        "shadow_offset": [0, 0]
-    },
-
     // Dirty tab labels (selected, dark)
     {
         "class": "tab_label",
@@ -722,15 +714,6 @@
     },
 
     // Dirty tab labels (selected, light)
-    {
-        "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["file_medium", "dirty", "selected"]}],
-        "fg": [140, 66, 96],
-        "shadow_color": [255, 0, 0, 32],
-        "shadow_offset": [0, 1],
-        "settings": ["highlight_modified_tabs"]
-    },
-
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["file_light", "dirty", "selected"]}],
@@ -774,15 +757,6 @@
         "settings": ["show_tab_close_buttons"],
         // "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         "content_margin": [0, 10, 14, 2]
-    },
-
-    {
-        "class": "tab_close_button",
-        "parents": [{"class": "tab_control", "attributes": ["file_medium", "selected"]}],
-        "layer0.tint": [35, 32, 38],
-        "layer1.tint": [35, 32, 38],
-        "layer2.tint": [35, 32, 38],
-        "layer3.tint": [35, 32, 38]
     },
 
     {
