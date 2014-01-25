@@ -43,8 +43,18 @@ There are currently four options you should probably be aware of:
 
 
 Notes
--------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 The color scheme in the screenshot above is Big Duo, which is included with this theme and the Nil theme, just because it's what I use and it's easier to copy the theme directory than it is to figure out where I put it last. So, you get it too! You can probably select this from your preferences menu or whatever the equivalent is on your platform.
 
 The font in the screenshot above is [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm) by Fabrizio Schiavi and it is awesome.
+
+
+Thanks
+------------------------------------------------------------------------------
+
+A list of thanks to people who helped/contributed to Freesia's development, in no particular order:
+
+- [FichteFoll](https://github.com/FichteFoll) for chatting about the design with me.
+- Other peoples on ##sublimetext that chimed in.
+- [acondiff](https://github.com/acondiff) for making the FlatUI theme.
