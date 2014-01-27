@@ -126,6 +126,12 @@
     },
 
     {
+        "class": "puck_control",
+        "settings": ["freesia_small_vscroll"],
+        "content_margin": [3, 12]
+    },
+
+    {
         // Horizontal puck is much smaller since I never use it except to judge
         // where I am in the view.
         "class": "puck_control",
