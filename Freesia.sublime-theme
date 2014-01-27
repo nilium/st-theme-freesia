@@ -142,6 +142,13 @@
         "blur": false
     },
 
+    {
+        "class": "puck_control",
+        "settings": ["freesia_large_hscroll"],
+        "attributes": ["horizontal"],
+        "content_margin": [12, 7]
+    },
+
     // Overlay scrollbars
     {
         "class": "scroll_area_control",
