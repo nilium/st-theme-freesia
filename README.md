@@ -33,13 +33,17 @@ And you should be good to go.
 Options
 ------------------------------------------------------------------------------
 
-There are currently four options you should probably be aware of:
+There are currently a handful of options you should probably be aware of:
 
  - `highlight_modified_tabs` — If `true`, Freesia will highlight modified / dirty tabs. Otherwise, tabs have only two states: active and inactive. I recommend turning this on because it's handy.
 
 - `freesia_large_tabs` and `freesia_small_tabs` — Only one of these should be set to true at a time. If both are set to true, small tabs win out. This simply changes the height of tabs and font size of tab labels. Does nothing special, but might be handy for people with lousy eyes and limited screen space, respectively.
 
 - `freesia_soft_tab_marker` — If set to true, the colored status lines in tabs are blurred and softened a bit. It was kind of an accident originally, but it looked neat, so I made it optional.
+
+- `freesia_small_vscroll` — If true, shrinks the vertical scrollbar so it's mostly only usable as an indicator of where you are. If you're like me and you navigate files by using find/go-to symbol/other tools, then this will get you back a tiny sliver of horizontal screen space. Who knows, maybe you'll have enough for three viewports horizontally?
+
+- `freesia_large_hscroll` — And this is like the opposite of the last. It increases the size of the horizontal scrollbar to that of the default vertical scrollbar. In other words, if you find you need to click on the horizontal scrollbar, this option's for you and you can set it to true to get your big scrubby back.
 
 
 Notes
