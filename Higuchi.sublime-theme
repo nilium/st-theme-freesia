@@ -1,0 +1,1163 @@
+[
+    /**************************************************************************
+        Higuchi theme by Noel Cower.
+
+        Art assets included in this theme package are
+        copyright (c) 2014 Noel Raymond Cower.
+
+        This theme's sublime-theme file is derived from the default
+        Sublime Text 3 theme.
+    **************************************************************************/
+
+    /**************************************************************************
+        Colors:
+            Control BG:             [233, 232, 234]
+            Tab Inactive BG:        [214, 210, 214]
+            Tab Inactive FG:        [105, 98, 129]
+            Tab Active BG:          [33, 35, 38]
+            Tab Active FG:          [231, 228, 232]
+            Tab Active FG L:        [37, 36, 37]
+            Highlight:              [40, 140, 240]
+            Modified:               [180, 60, 0, 192]
+            Modified (HL):          [255, 80, 20]
+            Overlays:               [212, 210, 214]
+            Tooltips:               [235, 233, 239]
+            Match (QP):             [60, 120, 190]
+            Match (SQP):            [40, 140, 240, 150]
+            Puck:                   [80, 133, 190]
+
+            There may also be tweaked colors below where a subtle difference
+            is necessary to get a small amount of contrast.
+    **************************************************************************/
+
+    /** GENERIC CONTROLS **/
+    {
+        "class": "label_control",
+        "color": [48, 48, 56],
+        "shadow_color": [255, 255, 255, 64],
+        "shadow_offset": [0, 1]
+    },
+
+    {
+        "class": "button_control",
+        "content_margin": [6, 5, 6, 6],
+        "min_size": [75, 0],
+        "layer0.texture": "Theme - Freesia/assets/button/back.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [4, 4],
+        "layer0.tint": [233, 232, 234],
+        "layer1.texture": "Theme - Freesia/assets/button/fore.png",
+        "layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
+        "layer1.inner_margin": [4, 4],
+        "layer1.tint": [40, 140, 240],
+        "layer1.draw_center": false
+    },
+
+    {
+        "class": "button_control",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+
+    {
+        "class": "button_control",
+        "attributes": ["pressed", "hover"],
+        "layer1.opacity": 1.0,
+        "layer1.tint": [255, 80, 20]
+    },
+
+
+    /** HISTORY BUTTON (find panel and such) **/
+    {
+        "class": "dropdown_button_control",
+        "content_margin": [8, 14, 4, 0],
+        "layer0.texture": "Theme - Freesia/assets/tabs/close/up-shadow.png",
+        "layer0.opacity": 0.25,
+        "layer0.inner_margin": [0, 0, 12, 14],
+        "layer1.texture": "Theme - Freesia/assets/tabs/close/up.png",
+        "layer1.opacity": 0.4,
+        "layer1.inner_margin": [0, 0, 12, 14]
+    },
+
+    {
+        "class": "dropdown_button_control",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+
+
+    /** SCROLLBARS **/
+    {
+        "class": "scroll_bar_control",
+        "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [233, 232, 234],
+        "layer0.inner_margin": 0,
+        "blur": false
+    },
+
+    {
+        "class": "scroll_bar_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [233, 232, 234],
+        "layer0.inner_margin": 0,
+        "blur": false
+    },
+
+    {
+        "class": "scroll_corner_control",
+        "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [233, 232, 234],
+        "layer0.inner_margin": 0
+    },
+
+    // Pucks (non-overlay)
+    {
+        "class": "puck_control",
+        "layer0.texture": "Theme - Freesia/assets/pucks/vertical.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [2, 0],
+        "layer0.tint": [80, 133, 190],
+        "content_margin": [7, 12],
+        "blur": false
+    },
+
+    {
+        "class": "puck_control",
+        "settings": ["freesia_small_vscroll"],
+        "content_margin": [3, 12]
+    },
+
+    {
+        // Horizontal puck is much smaller since I never use it except to judge
+        // where I am in the view.
+        "class": "puck_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Freesia/assets/pucks/horizontal.png",
+        "layer0.inner_margin": [0, 2],
+        "content_margin": [12, 3],
+        "blur": false
+    },
+
+    {
+        "class": "puck_control",
+        "settings": ["freesia_large_hscroll"],
+        "attributes": ["horizontal"],
+        "content_margin": [12, 7]
+    },
+
+    // Overlay scrollbars
+    {
+        "class": "scroll_area_control",
+        "settings": ["overlay_scroll_bars"],
+        "overlay": true
+    },
+
+    {
+        "class": "scroll_area_control",
+        "settings": ["!overlay_scroll_bars"],
+        "overlay": false
+    },
+
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Default/overlay_bar_vertical.png",
+        "layer0.inner_margin": [0, 5],
+        "blur": true
+    },
+
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Default/overlay_bar_horizontal.png",
+        "layer0.inner_margin": [5, 0],
+        "blur": true
+    },
+
+    // Pucks (overlay)
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Default/overlay_thumb_vertical.png",
+        "layer0.inner_margin": [0, 5],
+        "content_margin": [5, 20],
+        "blur": true
+    },
+
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Default/overlay_thumb_horizontal.png",
+        "layer0.inner_margin": [5, 0],
+        "content_margin": [20, 5],
+        "blur": true
+    },
+
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["dark"],
+        "layer0.texture": "Theme - Default/overlay_dark_thumb_vertical.png"
+    },
+
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal", "dark"],
+        "layer0.texture": "Theme - Default/overlay_dark_thumb_horizontal.png"
+    },
+
+
+    /** PANELS & OVERLAYS **/
+    {
+        "class": "panel_control",
+        "layer0.inner_margin": [4, 4],
+        "layer0.opacity": 1.0,
+        "layer0.tint": [212, 210, 214],
+        "content_margin": [2, 2]
+    },
+
+    {
+        "class": "overlay_control",
+        "layer0.tint": [212, 210, 214],
+        "layer0.opacity": 1.0,
+        "content_margin": [4, 4]
+    },
+
+    {
+        "class": "popup_control",
+        "layer0.tint": [212, 210, 214, 255],
+        "layer0.opacity": 1.0,
+        "content_margin": [2, 2]
+    },
+
+
+    /** TOOL TIPS **/
+    {
+        "class": "tool_tip_control",
+        "layer0.inner_margin": [2, 2],
+        "layer0.opacity": 1.0,
+        "layer0.tint": [235, 233, 239],
+        "content_margin": [3, 3]
+    },
+
+    {
+        "class": "tool_tip_label_control",
+        "color": [37, 36, 37]
+    },
+
+
+    /** SIDEBAR **/
+    {
+        "class": "sidebar_container",
+        "layer0.tint": [200, 200, 200],
+        "layer0.opacity": 1.0,
+        "layer0.draw_center": false,
+        "layer0.inner_margin": 0,
+        "content_margin": [0, 0, 2, 0]
+    },
+
+    // Tree
+    {
+        "class": "sidebar_tree",
+        "row_padding": [12, 5, 0, 5],
+        "indent": 12,
+        "indent_offset": 12,
+        "indent_top_level": false,
+        "layer0.tint": [233, 232, 234],
+        "layer0.opacity": 1.0,
+        "dark_content": true
+    },
+
+    {
+        "class": "sidebar_heading",
+        "color": [172, 172, 172],
+        "shadow_color": [255, 255, 255, 64],
+        "shadow_offset": [0, 1],
+        "font.bold": false
+    },
+
+    {
+        "class": "sidebar_label",
+        "color": [105, 98, 129]
+    },
+
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["!selected", "hover"]}],
+        "color": [128, 90, 255]
+    },
+
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [48, 48, 56]
+    },
+
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "settings": ["bold_folder_labels"],
+        "font.bold": true
+    },
+
+    {
+        "class": "sidebar_label",
+        "attributes": ["transient"],
+        "color": [195, 209, 242]
+    },
+
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "attributes": ["transient"],
+        "color": [164, 174, 200]
+    },
+
+    {
+        "class": "sidebar_heading",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "shadow_color": [0, 0, 0, 0]
+    },
+
+
+    /** SIDEBAR DISCLOSURE CONTROLS (FOLDERS / GROUPS) **/
+    {
+        "class": "disclosure_button_control",
+        "layer0.texture": "Theme - Freesia/assets/folder/closed.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [105, 98, 129],
+        "layer0.inner_margin": [8, 8],
+        "content_margin": [8, 8]
+    },
+
+    {
+        "class": "disclosure_button_control",
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.tint": [128, 90, 255]
+    },
+
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Freesia/assets/folder/open.png"
+    },
+
+
+    /** TABLE ROWS (SIDEBAR / PANEL) **/
+    // table_row
+    {
+        "class": "table_row",
+        "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [1, 1],
+        "layer0.tint": [200, 200, 255, 64]
+    },
+
+    {
+        "class": "table_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+
+    // tree_row
+    {
+        "class": "tree_row",
+        "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [1, 1],
+        "layer0.tint": [200, 200, 255, 64]
+    },
+
+    {
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+
+    // Close buttons (open files)
+    {
+        "class": "close_button",
+        "content_margin": [10, 6],
+
+        // Shadows
+        "layer0.texture": "Theme - Freesia/assets/tabs/close/up-shadow.png",
+        "layer0.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.tint": [255, 255, 255],
+        "layer0.inner_margin": [0, 0, 14, 12],
+
+        "layer1.texture": "Theme - Freesia/assets/tabs/close/down-shadow.png",
+        "layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer1.tint": [255, 255, 255],
+        "layer1.inner_margin": [0, 0, 14, 12],
+
+        // Buttons
+        "layer2.texture": "Theme - Freesia/assets/tabs/close/up.png",
+        "layer2.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer2.tint": [128, 90, 255],
+        "layer2.inner_margin": [0, 0, 14, 12],
+
+        "layer3.texture": "Theme - Freesia/assets/tabs/close/down.png",
+        "layer3.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer3.tint": [128, 90, 255],
+        "layer3.inner_margin": [0, 0, 14, 12]
+    },
+    // 120, 20, 0
+    // 255, 120, 50
+    // 255, 40, 0
+    {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "layer0.opacity": 0.5,
+        "layer2.opacity": 1.0,
+        "layer2.tint": [255, 40, 0],
+        "layer3.tint": [255, 40, 0]
+    },
+
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.opacity": 0.5,
+        "layer2.opacity": 1.0
+    },
+
+    {
+        "class": "close_button",
+        "attributes": ["pressed"],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0,
+        "layer2.opacity": 0.0,
+        "layer3.opacity": 1.0
+    },
+
+
+    /** MINIMAP **/
+    {
+        "class": "minimap_control",
+        "viewport_opacity": { "target": 0.25, "speed": 3.0, "interpolation": "smoothstep" },
+        "settings": ["always_show_minimap_viewport"]
+    },
+
+    {
+        "class": "minimap_control",
+        "viewport_opacity": { "target": 0.0, "speed": 3.0, "interpolation": "smoothstep" },
+        "settings": ["!always_show_minimap_viewport"]
+    },
+
+    {
+        "class": "minimap_control",
+        "viewport_color": [40, 140, 240, 64],
+        "attributes": ["hover"],
+        "viewport_opacity": 1.0
+    },
+
+
+    /** TEXT INPUT (find panel, quick panel, console, etc. inputs) **/
+    {
+        "class": "text_line_control",
+        "layer0.texture": "Theme - Freesia/assets/button/back.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [4, 4],
+        "layer1.texture": "Theme - Freesia/assets/button/fore.png",
+        "layer1.tint": [40, 140, 240],
+        "layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
+        "layer1.inner_margin": [4, 4],
+        "tint_index": 0,
+        "content_margin": [3, 3, 3, 3]
+    },
+
+    {
+        "class": "text_line_control",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+
+
+    /** STATUS BAR **/
+    {
+        "class": "status_bar",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [2, 2],
+        "layer0.tint": [212, 210, 214],
+        "content_margin": [4, 2, 4, 0]
+    },
+
+    // Status bar text
+    {
+        "class": "label_control",
+        "parents": [{"class": "status_bar"}],
+        "color": [48, 48, 56],
+        "shadow_color": [255, 255, 255, 64],
+        "shadow_offset": [0, 1]
+    },
+
+    {
+        "class": "status_container",
+        "content_margin": [0, 2, 0, 3]
+    },
+
+    // Status bar buttons (e.g., syntax mode, indent style/width)
+    {
+        "class": "status_button",
+        "layer0.tint": [231, 228, 232],
+        "layer0.inner_margin": [1, 0, 0, 0],
+        "layer0.opacity": 1.0,
+        "layer0.draw_center": false,
+        "content_margin": [8, 0, 8, 0],
+        "min_size": [64, 0]
+    },
+
+
+    /** QUICK PANEL **/
+    {
+        "class": "quick_panel",
+        "row_padding": [4, 4],
+        "layer0.tint": [233, 232, 234],
+        "layer0.opacity": 1.0,
+        "dark_content": true
+    },
+
+    {
+        "class": "quick_panel_row",
+        "layer0.tint": [233, 232, 234],
+        "layer0.opacity": 1.0
+    },
+
+    {
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.tint": [200, 200, 255, 64]
+    },
+
+    {
+        "class": "quick_panel_label",
+        "fg": [105, 98, 129, 255],
+        "match_fg": [60, 120, 190, 255],
+        "selected_fg": [72, 72, 72, 255],
+        "selected_match_fg": [40, 140, 240, 150]
+    },
+
+    {
+        "class": "quick_panel_path_label",
+        "fg": [105, 98, 129, 255],
+        "match_fg": [60, 120, 190, 255],
+        "selected_fg": [72, 72, 72, 255],
+        "selected_match_fg": [40, 140, 240, 150]
+    },
+
+    {
+        "class": "quick_panel_score_label",
+        "fg": [105, 98, 129, 255],
+        "selected_fg": [72, 72, 72, 255]
+    },
+
+    /** MINI QUICK PANEL **/
+    {
+        "class": "mini_quick_panel_row",
+        "layer0.tint": [233, 232, 234],
+        "layer0.inner_margin": [2, 2, 2, 2],
+        "layer0.opacity": 1.0
+    },
+
+    {
+        "class": "mini_quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.tint": [200, 200, 255, 64]
+    },
+
+    /** AUTOCOMPLETE POPUP **/
+    {
+        "class": "auto_complete",
+        "row_padding": [2, 0],
+        "layer0.tint": [233, 232, 234],
+        "layer0.opacity": 1.0,
+        "dark_content": true
+    },
+
+    {
+        "class": "auto_complete_label",
+        "fg": [105, 98, 129, 255],
+        "match_fg": [60, 120, 190, 255],
+        "selected_fg": [72, 72, 72, 255],
+        "selected_match_fg": [40, 140, 240, 150]
+    },
+
+    /** SHEET CONTAINER (thingy that contains your views) **/
+    {
+        "class": "sheet_container_control",
+        "layer0.tint": [233, 232, 234],
+        "layer0.opacity": 1.0
+    },
+
+
+    /** TABS **/
+    {
+        // Tabset is the row that holds tabs
+        "class": "tabset_control",
+
+        "layer0.texture": "Theme - Freesia/assets/tabs/set.png",
+        "layer0.inner_margin": [2, 0],
+        "layer0.opacity": 1.0,
+        "layer0.tint": [233, 232, 234],
+
+        "content_margin": [2, 0, 2, 0],
+        "tab_overlap": 2,
+        "tab_width": 180,
+        "tab_min_width": 64,
+        "tab_height": 30,
+        "mouse_wheel_switch": false
+    },
+
+    {
+        "class": "tabset_control",
+        "settings": ["mouse_wheel_switches_tabs", "!enable_tab_scrolling"],
+        "mouse_wheel_switch": true
+    },
+
+    // Tab controls themselves (labels below)
+    {
+        "class": "tab_control",
+
+        "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
+        "layer0.inner_margin": [4, 4],
+        "layer0.opacity": 1.0,
+        "layer0.tint": [233, 232, 234],
+
+        "layer1.texture": "Theme - Freesia/assets/tabs/fg-inactive.png",
+        "layer1.inner_margin": [4, 4],
+        "layer1.opacity": 1.0,
+        "layer1.tint": [214, 210, 214],
+
+        "layer2.texture": "Theme - Freesia/assets/tabs/fg.png",
+        "layer2.inner_margin": [4, 4],
+        "layer2.opacity": 0.0,
+
+        "layer3.texture": "Theme - Freesia/assets/tabs/mark.png",
+        "layer3.inner_margin": [4, 4],
+        "layer3.opacity": 0.0,
+
+        "tint_index": 2,
+        "tint_modifier": [255, 255, 255, 0],
+
+        "content_margin": [12, 8, 12, 4],
+        "max_margin_trim": 6,
+        "hit_test_level": 0.4
+    },
+
+    {
+        "class": "tab_control",
+        "settings": ["freesia_soft_tab_marker"],
+        "layer3.texture": "Theme - Freesia/assets/tabs/mark-soft.png"
+    },
+
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+
+        "layer1.opacity": 0.0,
+        "layer2.opacity": 1.0,
+        "layer3.opacity": 1.0,
+        "layer3.tint": [40, 140, 240],
+
+        "content_margin": [12, 8, 12, 4],
+        "max_margin_trim": 6,
+        "hit_test_level": 0.4
+    },
+
+    // Inactive tabs (dirty)
+    {
+        "class": "tab_control",
+        "attributes": ["dirty"],
+        "layer3.opacity": 1.0,
+        "layer3.tint": [255, 80, 20, 116],
+        "settings": ["highlight_modified_tabs"]
+    },
+
+    // Active tabs (dirty)
+    {
+        "class": "tab_control",
+        "attributes": ["dirty", "selected"],
+        "layer3.opacity": 1.0,
+        "layer3.tint": [255, 80, 20],
+        "settings": ["highlight_modified_tabs"]
+    },
+
+    {
+        "class": "tab_control",
+        "attributes": ["file_medium", "dirty", "selected"],
+        "layer3.opacity": 0.9,
+        "settings": ["highlight_modified_tabs"]
+    },
+
+    {
+        "class": "tab_control",
+        "attributes": ["file_light", "dirty", "selected"],
+        "layer3.opacity": 0.75,
+        "settings": ["highlight_modified_tabs"]
+    },
+
+    // Tab labels (inactive)
+    {
+        "class": "tab_label",
+        "fg": [105, 98, 129],
+        "shadow_color": [255, 255, 255, 63],
+        "shadow_offset": [0, 1],
+        "font.size": 11 // default
+    },
+
+    // Active tabs
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "fg": [231, 228, 232]
+    },
+
+    // Selected tab labels for lighter color schemes
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["selected", "file_light"]}],
+        "fg": [33, 35, 38],
+        "shadow_color": [0, 0, 0, 0],
+        "shadow_offset": [0, 0]
+    },
+
+    // Dirty tab labels (selected, dark)
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+        "fg": [255, 230, 198],
+        "settings": ["highlight_modified_tabs"]
+    },
+
+    // Dirty tab labels (selected, light)
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["file_light", "dirty", "selected"]}],
+        "fg": [250, 100, 66],
+        "shadow_color": [0, 0, 0, 0],
+        "shadow_offset": [0, 1],
+        "settings": ["highlight_modified_tabs"]
+    },
+
+    // Tab Close Buttons
+    {
+        "class": "tab_close_button",
+        "content_margin": [0, 0],
+
+        // Shadows
+        "layer0.texture": "Theme - Freesia/assets/tabs/close/up-shadow.png",
+        "layer0.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.tint": [0, 0, 0],
+        "layer0.inner_margin": [0, 0, 14, 12],
+
+        "layer1.texture": "Theme - Freesia/assets/tabs/close/down-shadow.png",
+        "layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer1.tint": [0, 0, 0],
+        "layer1.inner_margin": [0, 0, 14, 12],
+
+        // Buttons
+        "layer2.texture": "Theme - Freesia/assets/tabs/close/up.png",
+        "layer2.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer2.tint": [231, 228, 232],
+        "layer2.inner_margin": [0, 0, 14, 12],
+
+        "layer3.texture": "Theme - Freesia/assets/tabs/close/down.png",
+        "layer3.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer3.tint": [231, 228, 232],
+        "layer3.inner_margin": [0, 0, 14, 12]
+    },
+
+    // Set content margin if show_tab_close_buttons is set
+    {
+        "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [0, 10, 14, 2]
+    },
+
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["file_light", "selected"]}],
+        "layer0.tint": [255, 255, 255],
+        "layer1.tint": [255, 255, 255],
+        "layer2.tint": [40, 140, 240],
+        "layer3.tint": [40, 140, 240]
+    },
+
+    // Hover tab (show close button)
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        "layer0.opacity": 0.25,
+        "layer2.opacity": 1.0
+    },
+
+    // Hover close button (highlight)
+    {
+        "class": "tab_close_button",
+        "attributes": ["hover"],
+        "layer0.opacity": 0.75,
+        "layer2.opacity": 1.0
+    },
+
+    // Dirty tab close button
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer2.tint": [120, 20, 0],
+        "layer3.tint": [120, 20, 0]
+    },
+
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
+        "layer2.tint": [255, 120, 50],
+        "layer3.tint": [255, 120, 50]
+    },
+
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["file_light", "dirty", "selected"]}],
+        "layer2.tint": [255, 40, 0],
+        "layer3.tint": [255, 40, 0]
+    },
+
+    // Pressed close button
+    {
+        "class": "tab_close_button",
+        "attributes": ["pressed"],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0,
+        "layer2.opacity": 0.0,
+        "layer3.opacity": 1.0
+    },
+
+    /** TAB OPTIONALS **/
+    // Larger tabs
+    {
+        "class": "tabset_control",
+        "settings": ["freesia_large_tabs"],
+        "tab_height": 38
+    },
+
+    {
+        "class": "tab_label",
+        "settings": ["freesia_large_tabs"],
+        "font.size": 12
+    },
+
+    // Smaller tabs
+    {
+        "class": "tabset_control",
+        "settings": ["freesia_small_tabs"],
+        "tab_height": 25
+    },
+
+    {
+        "class": "tab_label",
+        "settings": ["freesia_small_tabs"],
+        "font.size": 9
+    },
+
+
+    /** TAB SCROLLING JUNK **/
+    // Following is more or less as it was in the default theme because I'm lazy
+    {
+        "class": "scroll_tabs_left_button",
+        "content_margin": [9, 7, 8, 6],
+        "layer0.texture": "Theme - Default/arrow_left.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "layer1.texture": "Theme - Default/arrow_left_over.png",
+        "layer1.opacity": 0.0,
+        "layer1.inner_margin": 0
+    },
+
+    {
+        "class": "scroll_tabs_left_button",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+
+    {
+        "class": "scroll_tabs_right_button",
+        "content_margin": [9, 7, 8, 6],
+        "layer0.texture": "Theme - Default/arrow_right.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "layer1.texture": "Theme - Default/arrow_right_over.png",
+        "layer1.opacity": 0.0,
+        "layer1.inner_margin": 0
+    },
+
+    {
+        "class": "scroll_tabs_right_button",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+
+    {
+        "class": "show_tabs_dropdown_button",
+        "content_margin": [9, 7, 8, 6],
+        "layer0.texture": "Theme - Default/arrow_down.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "layer1.texture": "Theme - Default/arrow_down_over.png",
+        "layer1.opacity": 0.0,
+        "layer1.inner_margin": 0
+    },
+
+    {
+        "class": "show_tabs_dropdown_button",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+
+
+    /** FOLD BUTTONS **/
+    {
+        "class": "fold_button_control",
+        "layer0.texture": "Theme - Default/arrow_right.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "layer1.texture": "Theme - Default/arrow_right_over.png",
+        "layer1.opacity": 0.0,
+        "layer1.inner_margin": 0,
+        "content_margin": [9, 7, 8, 6]
+    },
+
+    {
+        "class": "fold_button_control",
+        "attributes": ["hover"],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
+    },
+
+    {
+        "class": "fold_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Default/arrow_down.png",
+        "layer1.texture": "Theme - Default/arrow_down_over.png"
+    },
+
+
+    /** VIEW GRID **/
+    {
+        "class": "grid_layout_control",
+        "border_size": 2,
+        "border_color": [200, 200, 200]
+    },
+
+
+    /** PROGRESS BAR **/
+    // I have no idea where this shows up, so it's as it was in the default theme
+    {
+        "class": "progress_bar_control",
+        "layer0.tint": [32, 32, 32],
+        "layer0.opacity": 1.0
+    },
+
+    {
+        "class": "progress_gauge_control",
+        "layer0.tint": [43, 102, 201],
+        "layer0.opacity": 1.0,
+        "content_margin": [0, 6]
+    },
+
+
+    /** DIALOG **/
+    // Not even remotely sure where this is used either.
+    {
+        "class": "dialog",
+        "layer0.tint": [233, 232, 234],
+        "layer0.opacity": 1.0
+    },
+
+
+    /** FIND PANEL BUTTONS (GENERAL) **/
+    {
+        "class": "icon_button_control",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/bg-center.png",
+        "layer0.inner_margin": [4, 4],
+        "layer0.opacity": 1.0,
+        "layer0.tint": [233, 232, 234],
+        "layer1.texture": "Theme - Freesia/assets/glyphs/seg-isolated.png",
+        "layer1.draw_center": false,
+        "layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep"},
+        "layer1.inner_margin": [4, 4],
+        "layer1.tint": [40, 140, 240],
+        "content_margin": [4, 5]
+    },
+
+    {
+        "class": "icon_button_control",
+        "attributes": ["left"],
+        "layer0.texture": "Theme - Freesia/assets/glyphs/bg-left.png",
+        "layer1.texture": "Theme - Freesia/assets/glyphs/seg-isolated.png"
+    },
+
+    {
+        "class": "icon_button_control",
+        "attributes": ["right"],
+        "layer0.texture": "Theme - Freesia/assets/glyphs/bg-right.png",
+        "layer1.texture": "Theme - Freesia/assets/glyphs/seg-isolated.png"
+    },
+
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "right"],
+        "layer0.texture": "Theme - Freesia/assets/glyphs/bg-isolated.png",
+        "layer1.texture": "Theme - Freesia/assets/glyphs/seg-isolated.png"
+    },
+
+    {
+        "class": "icon_button_control",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+
+    {
+        "class": "icon_button_control",
+        "attributes": ["pressed", "hover"],
+        "layer1.opacity": 1.0,
+        "layer1.tint": [255, 80, 20]
+    },
+
+
+    /** FIND PANEL ICONS **/
+    {
+        "class": "icon_regex",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/regex.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 7]
+    },
+
+    {
+        "class": "icon_case",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/case.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 7]
+    },
+
+    {
+        "class": "icon_highlight",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/highlight.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 7]
+    },
+
+    {
+        "class": "icon_in_selection",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/in-selection.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 7]
+    },
+
+    {
+        "class": "icon_reverse",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/reverse.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 7]
+    },
+
+    {
+        "class": "icon_whole_word",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/word-only.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 7]
+    },
+
+    {
+        "class": "icon_wrap",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/wrap.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 7]
+    },
+
+    {
+        "class": "icon_preserve_case",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/preserve-case.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [21, 7]
+    },
+
+    {
+        "class": "icon_context",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/context.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 7]
+    },
+
+    {
+        "class": "icon_use_buffer",
+        "layer0.texture": "Theme - Freesia/assets/glyphs/buffer.png",
+        "layer0.tint": [140, 140, 150],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 7]
+    },
+
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+    {
+        "class": "icon_highlight",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+    {
+        "class": "icon_in_selection",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+    {
+        "class": "icon_reverse",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+    {
+        "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+    {
+        "class": "icon_wrap",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+    {
+        "class": "icon_preserve_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+    {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+    {
+        "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [40, 140, 240]
+    },
+]

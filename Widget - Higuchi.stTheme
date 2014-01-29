@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Widget - Higuchi</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#f0f0f0</string>
+				<key>caret</key>
+				<string>#ffffff</string>
+				<key>foreground</key>
+				<string>#302f2d</string>
+				<key>inactiveSelection</key>
+				<string>#a094af6d</string>
+				<key>invisibles</key>
+				<string>#404040</string>
+				<key>lineHighlight</key>
+				<string>#42557c3f</string>
+				<key>selection</key>
+				<string>#ba44e76d</string>
+				<key>selectionBorder</key>
+				<string>#de96fa6d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#74717e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Keyword</string>
+			<key>scope</key>
+			<string>keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#8446e7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Constant</string>
+			<key>scope</key>
+			<string>constant</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#34a2f9</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00a300</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String Interpolation</string>
+			<key>scope</key>
+			<string>constant.character.escaped, constant.character.escape, string source</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#f16200</string>
+			</dict>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>6A8A24F6-87A7-4784-AB62-BC8768DFF157</string>
+</dict>
+</plist>
