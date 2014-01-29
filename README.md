@@ -30,6 +30,16 @@ With the repository cloned, you can now hop into your preferences and set the `t
 And you should be good to go.
 
 
+Light Theme
+------------------------------------------------------------------------------
+
+There's a work-in-progress light theme included, currently, called Higuchi. It's currently a fairly normal blue and orange and the only purple visible isn't really all that visible.
+
+To use it, just specify `"Higuchi.sublime-theme"` as your theme instead of Freesia in your settings.
+
+Keep in mind that the colors might change a bit down the road.
+
+
 Options
 ------------------------------------------------------------------------------
 
