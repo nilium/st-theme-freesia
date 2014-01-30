@@ -363,7 +363,7 @@
     {
         "class": "tree_row",
         "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
-        "layer0.opacity": 0.0,
+        "layer0.opacity": { "target": 0.0, "speed": 8.0, "interpolation": "smoothstep" },
         "layer0.inner_margin": [1, 1],
         "layer0.tint": [48, 43, 67]
     },
@@ -371,7 +371,14 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": { "target": 0.3, "speed": 8.0, "interpolation": "smoothstep" }
+    },
+
+    {
+        "class": "tree_row",
+        "parents": [{ "class": "sidebar_tree", "attributes": ["hover"] }],
+        "attributes": ["selected"],
+        "layer0.opacity": { "target": 1.0, "speed": 8.0, "interpolation": "smoothstep" }
     },
 
     // Close buttons (open files)

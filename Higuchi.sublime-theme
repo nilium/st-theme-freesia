@@ -357,28 +357,35 @@
         "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1],
-        "layer0.tint": [200, 200, 255, 64]
+        "layer0.tint": [90, 200, 255]
     },
 
     {
         "class": "table_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.5
     },
 
     // tree_row
     {
         "class": "tree_row",
         "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
-        "layer0.opacity": 0.0,
+        "layer0.opacity": { "target": 0.0, "speed": 8.0, "interpolation": "smoothstep" },
         "layer0.inner_margin": [1, 1],
-        "layer0.tint": [200, 200, 255, 64]
+        "layer0.tint": [90, 200, 255]
     },
 
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": { "target": 0.3, "speed": 8.0, "interpolation": "smoothstep" }
+    },
+
+    {
+        "class": "tree_row",
+        "parents": [{ "class": "sidebar_tree", "attributes": ["hover"] }],
+        "attributes": ["selected"],
+        "layer0.opacity": { "target": 0.7, "speed": 8.0, "interpolation": "smoothstep" }
     },
 
     // Close buttons (open files)
@@ -532,7 +539,7 @@
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [200, 200, 255, 64]
+        "layer0.tint": [90, 200, 255]
     },
 
     {
@@ -568,7 +575,7 @@
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [200, 200, 255, 64]
+        "layer0.tint": [90, 200, 255]
     },
 
     /** AUTOCOMPLETE POPUP **/
