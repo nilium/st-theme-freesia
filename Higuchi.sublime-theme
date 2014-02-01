@@ -297,7 +297,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [48, 48, 56]
+        "color": [48, 48, 127]
     },
 
     {
