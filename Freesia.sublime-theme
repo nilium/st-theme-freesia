@@ -1144,5 +1144,5 @@
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.tint": [254, 54, 111]
-    },
+    }
 ]
