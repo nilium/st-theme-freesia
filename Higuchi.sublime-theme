@@ -308,19 +308,6 @@
     },
 
     {
-        "class": "sidebar_label",
-        "attributes": ["transient"],
-        "color": [195, 209, 242]
-    },
-
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "attributes": ["transient"],
-        "color": [164, 174, 200]
-    },
-
-    {
         "class": "sidebar_heading",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "shadow_color": [0, 0, 0, 0]
