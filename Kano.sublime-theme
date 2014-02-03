@@ -23,14 +23,14 @@
             Overlays:               [62, 65, 72]
             Tooltips:               [185, 183, 189]
             Match (QP):             [255, 110, 110]
-            Match (SQP):            [255, 72, 72]
+            Match (SQP):            [255, 115, 111]
             Puck:                   [140, 142, 148]
     **************************************************************************/
 
     /** GENERIC CONTROLS **/
     {
         "class": "label_control",
-        "color": [224, 228, 230],
+        "color": [164, 168, 170],
         "shadow_color": [24, 24, 24],
         "shadow_offset": [0, 1]
     },
@@ -287,7 +287,13 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [224, 228, 230]
+        "color": [204, 208, 210]
+    },
+
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
+        "color": [160, 163, 190]
     },
 
     {
@@ -316,7 +322,7 @@
     {
         "class": "disclosure_button_control",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [224, 228, 230]
+        "layer0.tint": [160, 163, 190]
     },
 
     {
@@ -473,7 +479,7 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [224, 228, 230],
+        "color": [164, 168, 170],
         "shadow_color": [24, 24, 24],
         "shadow_offset": [0, 1]
     },
@@ -486,7 +492,7 @@
     // Status bar buttons (e.g., syntax mode, indent style/width)
     {
         "class": "status_button",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.inner_margin": [1, 0, 0, 0],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
@@ -521,7 +527,7 @@
         "fg": [144, 148, 152, 255],
         "match_fg": [255, 110, 110, 255],
         "selected_fg": [200, 200, 200, 255],
-        "selected_match_fg": [255, 72, 72]
+        "selected_match_fg": [255, 115, 111]
     },
 
     {
@@ -529,7 +535,7 @@
         "fg": [144, 148, 152, 255],
         "match_fg": [255, 110, 110, 255],
         "selected_fg": [200, 200, 200, 255],
-        "selected_match_fg": [255, 72, 72]
+        "selected_match_fg": [255, 115, 111]
     },
 
     {
@@ -566,7 +572,7 @@
         "fg": [144, 148, 152, 255],
         "match_fg": [255, 110, 110, 255],
         "selected_fg": [200, 200, 200, 255],
-        "selected_match_fg": [255, 72, 72]
+        "selected_match_fg": [255, 115, 111]
     },
 
     /** SHEET CONTAINER (thingy that contains your views) **/
@@ -1001,7 +1007,7 @@
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Freesia/assets/glyphs/regex.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [8, 7]
     },
@@ -1009,7 +1015,7 @@
     {
         "class": "icon_case",
         "layer0.texture": "Theme - Freesia/assets/glyphs/case.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [8, 7]
     },
@@ -1017,7 +1023,7 @@
     {
         "class": "icon_highlight",
         "layer0.texture": "Theme - Freesia/assets/glyphs/highlight.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [8, 7]
     },
@@ -1025,7 +1031,7 @@
     {
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Freesia/assets/glyphs/in-selection.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [8, 7]
     },
@@ -1033,7 +1039,7 @@
     {
         "class": "icon_reverse",
         "layer0.texture": "Theme - Freesia/assets/glyphs/reverse.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [8, 7]
     },
@@ -1041,7 +1047,7 @@
     {
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Freesia/assets/glyphs/word-only.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [8, 7]
     },
@@ -1049,7 +1055,7 @@
     {
         "class": "icon_wrap",
         "layer0.texture": "Theme - Freesia/assets/glyphs/wrap.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [8, 7]
     },
@@ -1057,7 +1063,7 @@
     {
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Freesia/assets/glyphs/preserve-case.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [21, 7]
     },
@@ -1065,7 +1071,7 @@
     {
         "class": "icon_context",
         "layer0.texture": "Theme - Freesia/assets/glyphs/context.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [8, 7]
     },
@@ -1073,7 +1079,7 @@
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Freesia/assets/glyphs/buffer.png",
-        "layer0.tint": [224, 228, 230],
+        "layer0.tint": [164, 168, 170],
         "layer0.opacity": 1.0,
         "content_margin": [8, 7]
     },
