@@ -134,9 +134,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Java → Package</string>
+			<string>Package</string>
 			<key>scope</key>
-			<string>meta.package, storage.modifier.package, keyword.other.package</string>
+			<string>meta.package, storage.modifier.package, keyword.other.package, meta.require string</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
