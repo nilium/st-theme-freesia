@@ -9,6 +9,8 @@ As of this writing, Freesia has only been tested in Sublime Text 3. You may atte
 
 This theme is built from the default Sublime theme, but is inspired by my previous theme, the [Nil theme](https://github.com/nilium/st2-nil-theme), and the [Flat UI theme by acondiff](https://github.com/acondiff/flatui-theme), both of which might suit you better if you find the color purple repulsive for some reason.
 
+In addition, there are two other themes included in Freesia: Higuchi and Kano. I'll eventually run out of names from the manga, but until then, more Freesia references.
+
 
 Installation
 ------------------------------------------------------------------------------
@@ -30,12 +32,22 @@ With the repository cloned, you can now hop into your preferences and set the `t
 And you should be good to go.
 
 
+Medium Theme
+------------------------------------------------------------------------------
+
+![Kano Theme](https://github.com/nilium/st-theme-freesia/raw/master/screenshot-kano.png)
+
+The medium/middle-ground theme in Freesia is the Kano theme, which is mostly grey-ish blue, blue, and red. To use it, set your theme to `"Kano.sublime-theme"`.
+
+In addition, the color scheme included with the Kano theme is Proxy, which can be used by setting your `color_scheme` to `"Packages/Theme - Freesia/Proxy.tmTheme"`.
+
+
 Light Theme
 ------------------------------------------------------------------------------
 
-There's a work-in-progress light theme included, currently, called Higuchi. It's currently a fairly normal blue and orange and the only purple visible isn't really all that visible.
+![Higuchi Theme](https://github.com/nilium/st-theme-freesia/raw/master/screenshot-higuchi.png)
 
-To use it, just specify `"Higuchi.sublime-theme"` as your theme instead of Freesia in your settings.
+The light theme in the Freesia package is called Higuchi. To use it, just specify `"Higuchi.sublime-theme"` as your theme instead of Freesia in your settings.
 
 Keep in mind that the colors might change a bit down the road.
 
