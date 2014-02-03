@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Widget - Kano</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#181a1e</string>
+				<key>caret</key>
+				<string>#ffffff</string>
+				<key>foreground</key>
+				<string>#e0e3e6</string>
+				<key>inactiveSelection</key>
+				<string>#a99291</string>
+				<key>invisibles</key>
+				<string>#404040</string>
+				<key>lineHighlight</key>
+				<string>#42557c3f</string>
+				<key>selection</key>
+				<string>#ea3e3f6d</string>
+				<key>selectionBorder</key>
+				<string>#ff7275b2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#74717e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Keyword</string>
+			<key>scope</key>
+			<string>keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00d2e5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Constant</string>
+			<key>scope</key>
+			<string>constant</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#34a2f9</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bbe16c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String Interpolation</string>
+			<key>scope</key>
+			<string>constant.character.escaped, constant.character.escape, string source</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#797be6</string>
+			</dict>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>F74C1709-1EB8-4372-9818-C08359360F58</string>
+</dict>
+</plist>
