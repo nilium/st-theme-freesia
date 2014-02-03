@@ -13,7 +13,7 @@
         Colors:
             Control BG:             [23, 23, 25]            171719
             Tab Inactive BG:        [48, 43, 67]            302b43
-            Tab Inactive FG:        [145, 138, 159]         918a9f
+            Tab Inactive FG:        [125, 118, 139]         918a9f
             Tab Active BG:          [33, 35, 38]            212326
             Tab Active FG:          [231, 228, 232]         e7e4e8
             Tab Active FG L:        [37, 36, 37]            252425
@@ -33,7 +33,7 @@
     /** GENERIC CONTROLS **/
     {
         "class": "label_control",
-        "color": [231, 228, 232],
+        "color": [182, 183, 185],
         "shadow_color": [24, 24, 24],
         "shadow_offset": [0, 1]
     },
@@ -284,13 +284,13 @@
 
     {
         "class": "sidebar_label",
-        "color": [145, 138, 159]
+        "color": [125, 118, 139]
     },
 
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [231, 228, 232]
+        "color": [182, 183, 185]
     },
 
     {
@@ -298,6 +298,12 @@
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "settings": ["bold_folder_labels"],
         "font.bold": true
+    },
+
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["hover", "expandable"]}],
+        "color": [165, 158, 210]
     },
 
     {
@@ -312,7 +318,7 @@
         "class": "disclosure_button_control",
         "layer0.texture": "Theme - Freesia/assets/folder/closed.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [145, 138, 159],
+        "layer0.tint": [125, 118, 139],
         "layer0.inner_margin": [8, 8],
         "content_margin": [8, 8]
     },
@@ -320,7 +326,7 @@
     {
         "class": "disclosure_button_control",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [231, 228, 232]
+        "layer0.tint": [165, 158, 210]
     },
 
     {
@@ -477,7 +483,7 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [231, 228, 232],
+        "color": [182, 183, 185],
         "shadow_color": [24, 24, 24],
         "shadow_offset": [0, 1]
     },
@@ -490,7 +496,7 @@
     // Status bar buttons (e.g., syntax mode, indent style/width)
     {
         "class": "status_button",
-        "layer0.tint": [231, 228, 232],
+        "layer0.tint": [182, 183, 185],
         "layer0.inner_margin": [1, 0, 0, 0],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
@@ -522,7 +528,7 @@
 
     {
         "class": "quick_panel_label",
-        "fg": [145, 138, 159, 255],
+        "fg": [125, 118, 139, 255],
         "match_fg": [159, 80, 127, 255],
         "selected_fg": [231, 228, 232, 255],
         "selected_match_fg": [232, 120, 181, 150]
@@ -530,7 +536,7 @@
 
     {
         "class": "quick_panel_path_label",
-        "fg": [145, 138, 159, 255],
+        "fg": [125, 118, 139, 255],
         "match_fg": [159, 80, 127, 255],
         "selected_fg": [231, 228, 232, 255],
         "selected_match_fg": [232, 120, 181, 150]
@@ -538,7 +544,7 @@
 
     {
         "class": "quick_panel_score_label",
-        "fg": [145, 138, 159, 255],
+        "fg": [125, 118, 139, 255],
         "selected_fg": [231, 228, 232, 255]
     },
 
@@ -567,7 +573,7 @@
 
     {
         "class": "auto_complete_label",
-        "fg": [145, 138, 159, 255],
+        "fg": [125, 118, 139, 255],
         "match_fg": [159, 80, 127, 255],
         "selected_fg": [231, 228, 232, 255],
         "selected_match_fg": [232, 120, 181, 150]
@@ -690,7 +696,7 @@
     // Tab labels (inactive)
     {
         "class": "tab_label",
-        "fg": [145, 138, 159],
+        "fg": [125, 118, 139],
         "shadow_color": [0, 0, 0, 255],
         "shadow_offset": [0, 1],
         "font.size": 11 // default
