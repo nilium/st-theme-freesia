@@ -1,7 +1,7 @@
 Freesia Theme
 ==============================================================================
 
-Freesia is a dark, fairly low-contrast theme with a lot of purple. It's intended for use with dark color schemes and currently only includes a dark variant.
+Freesia is a dark, fairly low-contrast theme with a lot of purple. It's intended for use with dark to medium color schemes and currently includes dark, medium, and light variants.
 
 ![Freesia Theme](https://github.com/nilium/st-theme-freesia/raw/master/screenshot.png)
 
