@@ -672,7 +672,7 @@
         "class": "tab_control",
         "attributes": ["dirty"],
         "layer3.opacity": 1.0,
-        "layer3.tint": [255, 0, 0, 48],
+        "layer3.tint": [255, 0, 0, 120],
         "settings": ["highlight_modified_tabs"]
     },
 
