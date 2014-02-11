@@ -17,14 +17,14 @@
             Tab Active BG:          [33, 35, 38]
             Tab Active FG:          [146, 146, 146]
             Tab Active FG L:        [37, 36, 37]
-            Highlight:              [8, 140, 180]
+            Highlight:              [0, 172, 222]
             Modified:               [255, 0, 0, 48]
             Modified (HL):          [255, 0, 0, 163]
             Overlays:               [12, 12, 12]
             Tooltips:               [82, 82, 83]
             Match (QP):             [8, 140, 182]
             Match (SQP):            [8, 176, 222, 192]
-            Puck:                   [8, 140, 180, 72]
+            Puck:                   [0, 172, 222, 98]
 
             There may also be tweaked colors below where a subtle difference
             is necessary to get a small amount of contrast.
@@ -49,7 +49,7 @@
         "layer1.texture": "Theme - Freesia/assets/button/fore.png",
         "layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
         "layer1.inner_margin": [4, 4],
-        "layer1.tint": [8, 140, 180],
+        "layer1.tint": [0, 172, 222],
         "layer1.draw_center": false
     },
 
@@ -120,7 +120,7 @@
         "layer0.texture": "Theme - Freesia/assets/pucks/vertical.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 0],
-        "layer0.tint": [8, 140, 180, 72],
+        "layer0.tint": [0, 172, 222, 98],
         "content_margin": [7, 12],
         "blur": false
     },
@@ -443,7 +443,7 @@
 
     {
         "class": "minimap_control",
-        "viewport_color": [8, 140, 180, 64],
+        "viewport_color": [0, 172, 222, 64],
         "attributes": ["hover"],
         "viewport_opacity": 1.0
     },
@@ -456,7 +456,7 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [4, 4],
         "layer1.texture": "Theme - Freesia/assets/button/fore.png",
-        "layer1.tint": [8, 140, 180],
+        "layer1.tint": [0, 172, 222],
         "layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
         "layer1.inner_margin": [4, 4],
         "tint_index": 0,
@@ -660,7 +660,7 @@
         "layer1.opacity": 0.0,
         "layer2.opacity": 1.0,
         "layer3.opacity": 1.0,
-        "layer3.tint": [8, 140, 180],
+        "layer3.tint": [0, 172, 222],
 
         "content_margin": [12, 8, 12, 4],
         "max_margin_trim": 6,
@@ -981,7 +981,7 @@
         "layer1.draw_center": false,
         "layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep"},
         "layer1.inner_margin": [4, 4],
-        "layer1.tint": [8, 140, 180],
+        "layer1.tint": [0, 172, 222],
         "content_margin": [4, 5]
     },
 
@@ -1104,51 +1104,51 @@
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     },
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [8, 140, 180]
+        "layer0.tint": [0, 172, 222]
     }
 ]
