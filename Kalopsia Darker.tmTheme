@@ -16,7 +16,7 @@
 				<key>foreground</key>
 				<string>#8a8a93</string>
 				<key>gutter</key>
-				<string>#0c0c0c</string>
+				<string>#0e0e0e</string>
 				<key>gutterForeground</key>
 				<string>#434348</string>
 				<key>inactiveSelection</key>
@@ -24,7 +24,7 @@
 				<key>invisibles</key>
 				<string>#404040</string>
 				<key>lineHighlight</key>
-				<string>#101012</string>
+				<string>#02d6ff16</string>
 				<key>selection</key>
 				<string>#00aee73d</string>
 				<key>selectionBorder</key>
