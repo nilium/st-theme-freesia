@@ -11,6 +11,8 @@ This theme is built from the default Sublime theme, but is inspired by my previo
 
 In addition, there are two other themes included in Freesia: Higuchi and Kano. I'll eventually run out of names from the manga, but until then, more Freesia references.
 
+The Freesia theme's included color schemes are _Proxy_ (medium), _Big Duo_ (medium-dark), and _Kalopsia_ (dark).
+
 
 Installation
 ------------------------------------------------------------------------------
@@ -71,7 +73,7 @@ There are currently a handful of options you should probably be aware of:
 Notes
 ------------------------------------------------------------------------------
 
-The color scheme in the screenshot above is Big Duo, which is included with this theme and the Nil theme, just because it's what I use and it's easier to copy the theme directory than it is to figure out where I put it last. So, you get it too! You can probably select this from your preferences menu or whatever the equivalent is on your platform.
+The color scheme in the screenshot for Freesia above is Big Duo, which is included with this theme and the Nil theme, just because it's what I use and it's easier to copy the theme directory than it is to figure out where I put it last. So, you get it too! You can probably select this from your preferences menu or whatever the equivalent is on your platform.
 
 The font in the screenshot above is [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm) by Fabrizio Schiavi and it is awesome.
 
