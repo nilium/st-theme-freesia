@@ -24,7 +24,7 @@
             Tooltips:               [82, 82, 83]
             Match (QP):             [8, 140, 182]
             Match (SQP):            [8, 176, 222, 192]
-            Puck:                   [8, 140, 180, 48]
+            Puck:                   [8, 140, 180, 72]
 
             There may also be tweaked colors below where a subtle difference
             is necessary to get a small amount of contrast.
@@ -120,7 +120,7 @@
         "layer0.texture": "Theme - Freesia/assets/pucks/vertical.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 0],
-        "layer0.tint": [8, 140, 180, 48],
+        "layer0.tint": [8, 140, 180, 72],
         "content_margin": [7, 12],
         "blur": false
     },
