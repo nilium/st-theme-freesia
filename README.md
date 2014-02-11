@@ -53,8 +53,6 @@ The medium/middle-ground theme in Freesia is the Kano theme, which is mostly gre
 
 In addition, the color scheme included with the Kano theme is Proxy, which can be used by setting your `color_scheme` to `"Packages/Theme - Freesia/Proxy.tmTheme"`.
 
-The color scheme in the screenshot above is Proxy.
-
 
 Higuchi - Light Theme
 ------------------------------------------------------------------------------
