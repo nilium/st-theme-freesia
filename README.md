@@ -9,9 +9,9 @@ As of this writing, Freesia has only been tested in Sublime Text 3. You may atte
 
 This theme is built from the default Sublime theme, but is inspired by my previous theme, the [Nil theme](https://github.com/nilium/st2-nil-theme), and the [Flat UI theme by acondiff](https://github.com/acondiff/flatui-theme), both of which might suit you better if you find the color purple repulsive for some reason.
 
-In addition, there are two other themes included in Freesia: Higuchi and Kano. I'll eventually run out of names from the manga, but until then, more Freesia references.
+In addition, there are three other themes included in Freesia: Higuchi, Kano, and Void. Higuchi is a light theme while Kano is a medium-grey theme. Void, as the name suggests, is a very dark theme and mostly intended for working at night.
 
-The Freesia theme's included color schemes are _Proxy_ (medium), _Big Duo_ (medium-dark), and _Kalopsia_ (dark).
+The Freesia theme's included color schemes are _Proxy_ (medium), _Big Duo_ (medium-dark - pictured above), _Kalopsia_ (dark), and _Kalopsia Darker_ (darker still).
 
 
 Installation
@@ -34,7 +34,17 @@ With the repository cloned, you can now hop into your preferences and set the `t
 And you should be good to go.
 
 
-Medium Theme
+Void - Really Dark Theme
+------------------------------------------------------------------------------
+
+![Void Theme](https://github.com/nilium/st-theme-freesia/raw/master/screenshot-void.png)
+
+Although not completely black, Void is fairly close. In a lot of ways, it's also the spiritual successor to the Nil theme, since it brings back the blue tab highlight as well.
+
+The color scheme in the screenshot above is Kalopsia Darker. In addition, you can see the soft tab highlights you get by turning on the `freesia_soft_tab_marker`.
+
+
+Kano - Medium Theme
 ------------------------------------------------------------------------------
 
 ![Kano Theme](https://github.com/nilium/st-theme-freesia/raw/master/screenshot-kano.png)
@@ -43,8 +53,10 @@ The medium/middle-ground theme in Freesia is the Kano theme, which is mostly gre
 
 In addition, the color scheme included with the Kano theme is Proxy, which can be used by setting your `color_scheme` to `"Packages/Theme - Freesia/Proxy.tmTheme"`.
 
+The color scheme in the screenshot above is Proxy.
 
-Light Theme
+
+Higuchi - Light Theme
 ------------------------------------------------------------------------------
 
 ![Higuchi Theme](https://github.com/nilium/st-theme-freesia/raw/master/screenshot-higuchi.png)
@@ -52,6 +64,8 @@ Light Theme
 The light theme in the Freesia package is called Higuchi. To use it, just specify `"Higuchi.sublime-theme"` as your theme instead of Freesia in your settings.
 
 Keep in mind that the colors might change a bit down the road.
+
+The color scheme in the screenshot above is Sanakan, which is included in the Nil theme.
 
 
 Options
