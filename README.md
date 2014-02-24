@@ -77,7 +77,11 @@ There are currently a handful of options you should probably be aware of:
 
 - `freesia_soft_tab_marker` — If set to true, the colored status lines in tabs are blurred and softened a bit. It was kind of an accident originally, but it looked neat, so I made it optional.
 
+- `freesia_borderless` — If true, removes the small border between the sidebar and content and between view groups.
+
 - `freesia_small_vscroll` — If true, shrinks the vertical scrollbar so it's mostly only usable as an indicator of where you are. If you're like me and you navigate files by using find/go-to symbol/other tools, then this will get you back a tiny sliver of horizontal screen space. Who knows, maybe you'll have enough for three viewports horizontally?
+
+- `freesia_medium_vscroll` and `freesia_medium_hscroll` — If true, the vertical and/or horizontal scrollbar will have a medium-sized puck, which is small but still grabbable. Handy for low-resolution screens.
 
 - `freesia_large_hscroll` — And this is like the opposite of the last. It increases the size of the horizontal scrollbar to that of the default vertical scrollbar. In other words, if you find you need to click on the horizontal scrollbar, this option's for you and you can set it to true to get your big scrubby back.
 
