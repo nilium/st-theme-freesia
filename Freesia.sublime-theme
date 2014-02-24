@@ -127,6 +127,12 @@
 
     {
         "class": "puck_control",
+        "settings": ["freesia_medium_vscroll"],
+        "content_margin": [5, 12]
+    },
+
+    {
+        "class": "puck_control",
         "settings": ["freesia_small_vscroll"],
         "content_margin": [3, 12]
     },
@@ -140,6 +146,13 @@
         "layer0.inner_margin": [0, 2],
         "content_margin": [12, 3],
         "blur": false
+    },
+
+    {
+        "class": "puck_control",
+        "settings": ["freesia_medium_hscroll"],
+        "attributes": ["horizontal"],
+        "content_margin": [12, 5]
     },
 
     {
@@ -261,6 +274,12 @@
         "layer0.draw_center": false,
         "layer0.inner_margin": 0,
         "content_margin": [0, 0, 2, 0]
+    },
+
+    {
+        "class": "sidebar_container",
+        "settings": ["freesia_borderless"],
+        "content_margin": [0, 0, 0, 0]
     },
 
     // Tree
@@ -923,6 +942,12 @@
         "class": "grid_layout_control",
         "border_size": 2,
         "border_color": [16, 16, 18]
+    },
+
+    {
+        "class": "grid_layout_control",
+        "settings": ["freesia_borderless"],
+        "border_size": 0
     },
 
 
