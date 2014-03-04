@@ -11,16 +11,16 @@
 
     /**************************************************************************
         Colors:
-            Control BG:             [6, 6, 6]
+            Control BG:             [10, 10, 11]
             Tab Inactive BG:        [11, 11, 12]
-            Tab Inactive FG:        [92, 92, 93]
+            Tab Inactive FG:        [122, 122, 123]
             Tab Active BG:          [33, 35, 38]
             Tab Active FG:          [146, 146, 146]
             Tab Active FG L:        [37, 36, 37]
             Highlight:              [0, 172, 222]
             Modified:               [255, 0, 0, 48]
             Modified (HL):          [255, 0, 0, 163]
-            Overlays:               [12, 12, 12]
+            Overlays:               [21, 22, 30]
             Tooltips:               [82, 82, 83]
             Match (QP):             [8, 140, 182]
             Match (SQP):            [8, 176, 222, 192]
@@ -45,7 +45,7 @@
         "layer0.texture": "Theme - Freesia/assets/button/back.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [4, 4],
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [21, 22, 30],
         "layer1.texture": "Theme - Freesia/assets/button/fore.png",
         "layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
         "layer1.inner_margin": [4, 4],
@@ -91,7 +91,7 @@
         "class": "scroll_bar_control",
         "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.inner_margin": 0,
         "blur": false
     },
@@ -101,7 +101,7 @@
         "attributes": ["horizontal"],
         "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.inner_margin": 0,
         "blur": false
     },
@@ -110,7 +110,7 @@
         "class": "scroll_corner_control",
         "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.inner_margin": 0
     },
 
@@ -232,20 +232,20 @@
         "class": "panel_control",
         "layer0.inner_margin": [4, 4],
         "layer0.opacity": 1.0,
-        "layer0.tint": [12, 12, 12],
+        "layer0.tint": [10, 10, 11],
         "content_margin": [2, 2]
     },
 
     {
         "class": "overlay_control",
-        "layer0.tint": [12, 12, 12],
+        "layer0.tint": [21, 22, 30],
         "layer0.opacity": 1.0,
         "content_margin": [4, 4]
     },
 
     {
         "class": "popup_control",
-        "layer0.tint": [12, 12, 12],
+        "layer0.tint": [21, 22, 30],
         "layer0.opacity": 1.0,
         "content_margin": [2, 2]
     },
@@ -269,11 +269,11 @@
     /** SIDEBAR **/
     {
         "class": "sidebar_container",
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": 0,
-        "content_margin": [0, 0, 2, 0]
+        "content_margin": [0, 0, 0, 0]
     },
 
     {
@@ -285,11 +285,11 @@
     // Tree
     {
         "class": "sidebar_tree",
-        "row_padding": [12, 5, 0, 5],
+        "row_padding": [12, 5, 12, 5],
         "indent": 12,
         "indent_offset": 12,
         "indent_top_level": false,
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.opacity": 1.0,
         "dark_content": true
     },
@@ -303,7 +303,7 @@
 
     {
         "class": "sidebar_label",
-        "color": [92, 92, 93]
+        "color": [122, 122, 123]
     },
 
     {
@@ -337,7 +337,7 @@
         "class": "disclosure_button_control",
         "layer0.texture": "Theme - Freesia/assets/folder/closed.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [92, 92, 93],
+        "layer0.tint": [122, 122, 123],
         "layer0.inner_margin": [8, 8],
         "content_margin": [8, 8]
     },
@@ -450,7 +450,7 @@
     /** MINIMAP **/
     {
         "class": "minimap_control",
-        "viewport_opacity": { "target": 0.25, "speed": 3.0, "interpolation": "smoothstep" },
+        "viewport_opacity": { "target": 0.5, "speed": 3.0, "interpolation": "smoothstep" },
         "settings": ["always_show_minimap_viewport"]
     },
 
@@ -472,6 +472,7 @@
     {
         "class": "text_line_control",
         "layer0.texture": "Theme - Freesia/assets/button/back.png",
+        "layer0.tint": [21, 22, 30],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [4, 4],
         "layer1.texture": "Theme - Freesia/assets/button/fore.png",
@@ -494,7 +495,7 @@
         "class": "status_bar",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
-        "layer0.tint": [12, 12, 12],
+        "layer0.tint": [10, 10, 11],
         "content_margin": [4, 2, 4, 0]
     },
 
@@ -528,14 +529,14 @@
     {
         "class": "quick_panel",
         "row_padding": [4, 4],
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.opacity": 1.0,
         "dark_content": true
     },
 
     {
         "class": "quick_panel_row",
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.opacity": 1.0
     },
 
@@ -547,7 +548,7 @@
 
     {
         "class": "quick_panel_label",
-        "fg": [92, 92, 93],
+        "fg": [122, 122, 123],
         "match_fg": [8, 140, 182],
         "selected_fg": [146, 146, 146],
         "selected_match_fg": [8, 176, 222, 192]
@@ -555,7 +556,7 @@
 
     {
         "class": "quick_panel_path_label",
-        "fg": [92, 92, 93],
+        "fg": [122, 122, 123],
         "match_fg": [8, 140, 182],
         "selected_fg": [146, 146, 146],
         "selected_match_fg": [8, 176, 222, 192]
@@ -563,14 +564,14 @@
 
     {
         "class": "quick_panel_score_label",
-        "fg": [92, 92, 93],
+        "fg": [122, 122, 123],
         "selected_fg": [146, 146, 146]
     },
 
     /** MINI QUICK PANEL **/
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
@@ -585,14 +586,14 @@
     {
         "class": "auto_complete",
         "row_padding": [2, 0],
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.opacity": 1.0,
         "dark_content": true
     },
 
     {
         "class": "auto_complete_label",
-        "fg": [92, 92, 93],
+        "fg": [122, 122, 123],
         "match_fg": [8, 140, 182],
         "selected_fg": [146, 146, 146],
         "selected_match_fg": [8, 176, 222, 192]
@@ -601,7 +602,7 @@
     /** SHEET CONTAINER (thingy that contains your views) **/
     {
         "class": "sheet_container_control",
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.opacity": 1.0
     },
 
@@ -614,7 +615,7 @@
         "layer0.texture": "Theme - Freesia/assets/tabs/set.png",
         "layer0.inner_margin": [2, 0],
         "layer0.opacity": 1.0,
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
 
         "content_margin": [2, 0, 2, 0],
         "tab_overlap": 2,
@@ -637,7 +638,7 @@
         "layer0.texture": "Theme - Freesia/assets/tabs/bg.png",
         "layer0.inner_margin": [4, 4],
         "layer0.opacity": 1.0,
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
 
         "layer1.texture": "Theme - Freesia/assets/tabs/fg-inactive.png",
         "layer1.inner_margin": [4, 4],
@@ -721,7 +722,7 @@
     // Tab labels (inactive)
     {
         "class": "tab_label",
-        "fg": [92, 92, 93],
+        "fg": [122, 122, 123],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 1],
         "font.size": 11 // default
@@ -991,7 +992,7 @@
     // Not even remotely sure where this is used either.
     {
         "class": "dialog",
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [10, 10, 11],
         "layer0.opacity": 1.0
     },
 
@@ -1002,7 +1003,7 @@
         "layer0.texture": "Theme - Freesia/assets/glyphs/bg-center.png",
         "layer0.inner_margin": [4, 4],
         "layer0.opacity": 1.0,
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [21, 22, 30],
         "layer1.texture": "Theme - Freesia/assets/glyphs/seg-isolated.png",
         "layer1.draw_center": false,
         "layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep"},

@@ -24,7 +24,7 @@
 				<key>invisibles</key>
 				<string>#404040</string>
 				<key>lineHighlight</key>
-				<string>#101012</string>
+				<string>#18cbff1e</string>
 				<key>selection</key>
 				<string>#00aee73d</string>
 				<key>selectionBorder</key>
@@ -80,7 +80,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#c33b45</string>
+				<string>#cb4f58</string>
 			</dict>
 		</dict>
 		<dict>
@@ -153,11 +153,11 @@
 			<key>name</key>
 			<string>Java → Package</string>
 			<key>scope</key>
-			<string>meta.package, storage.modifier.package, keyword.other.package</string>
+			<string>meta.package, storage.modifier.package, keyword.other.package, meta.require string - punctuation</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#a73f69</string>
+				<string>#b2597d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -190,7 +190,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9f6cbb</string>
+				<string>#9d78b1</string>
 			</dict>
 		</dict>
 		<dict>
@@ -659,6 +659,6 @@
 		</dict>
 	</array>
 	<key>uuid</key>
-	<string>7033459A-498B-48B7-9691-B4100E2AB2E2</string>
+	<string>11FDF387-F004-479F-A263-7022358C0C78</string>
 </dict>
 </plist>
