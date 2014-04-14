@@ -10,13 +10,13 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#090a0c</string>
+				<string>#0a0a0b</string>
 				<key>caret</key>
 				<string>#43d2ff</string>
 				<key>foreground</key>
 				<string>#8a8a93</string>
 				<key>gutter</key>
-				<string>#0e0e0e</string>
+				<string>#0a0a0b</string>
 				<key>gutterForeground</key>
 				<string>#434348</string>
 				<key>inactiveSelection</key>

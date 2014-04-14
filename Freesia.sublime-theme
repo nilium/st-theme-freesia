@@ -269,7 +269,7 @@
     /** SIDEBAR **/
     {
         "class": "sidebar_container",
-        "layer0.tint": [16, 16, 18],
+        "layer0.tint": [14, 14, 17],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": 0,
@@ -635,16 +635,17 @@
 
         "layer1.texture": "Theme - Freesia/assets/tabs/fg-inactive.png",
         "layer1.inner_margin": [4, 4],
-        "layer1.opacity": 1.0,
+        "layer1.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
         "layer1.tint": [43, 48, 67],
 
         "layer2.texture": "Theme - Freesia/assets/tabs/fg.png",
         "layer2.inner_margin": [4, 4],
-        "layer2.opacity": 0.0,
+        "layer2.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 
         "layer3.texture": "Theme - Freesia/assets/tabs/mark.png",
         "layer3.inner_margin": [4, 4],
-        "layer3.opacity": 0.0,
+        "layer3.tint": [127, 127, 180],
+        "layer3.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
 
         "tint_index": 2,
         "tint_modifier": [255, 255, 255, 0],
@@ -657,21 +658,35 @@
     {
         "class": "tab_control",
         "settings": ["freesia_soft_tab_marker"],
-        "layer3.texture": "Theme - Freesia/assets/tabs/mark-soft.png"
+        "layer3.texture": "Theme - Freesia/assets/tabs/mark-soft.png",
+        "layer3.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
     },
 
     {
         "class": "tab_control",
         "attributes": ["selected"],
 
-        "layer1.opacity": 0.0,
-        "layer2.opacity": 1.0,
-        "layer3.opacity": 1.0,
-        "layer3.tint": [60, 140, 209],
+        "layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer2.opacity": { "target": 1.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer3.opacity": { "target": 1.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer3.tint": [60, 190, 255],
 
         "content_margin": [12, 8, 12, 4],
         "max_margin_trim": 6,
         "hit_test_level": 0.4
+    },
+
+    {
+        "class": "tab_control",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0,
+        "layer3.tint": [40, 180, 255]
+    },
+
+    {
+        "class": "tab_control",
+        "attributes": ["selected", "hover"],
+        "layer1.opacity": 0.0
     },
 
     // Inactive tabs (dirty)
@@ -687,7 +702,6 @@
     {
         "class": "tab_control",
         "attributes": ["dirty", "selected"],
-        "layer3.opacity": 1.0,
         "layer3.tint": [255, 111, 54],
         "settings": ["highlight_modified_tabs"]
     },
@@ -941,13 +955,13 @@
     {
         "class": "grid_layout_control",
         "border_size": 2,
-        "border_color": [16, 16, 18]
+        "border_color": [14, 14, 17]
     },
 
     {
         "class": "grid_layout_control",
         "settings": ["freesia_borderless"],
-        "border_size": 0
+        "border_size": 1
     },
 
 
