@@ -308,6 +308,12 @@
 
     {
         "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [228, 231, 232]
+    },
+
+    {
+        "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [231, 228, 232]
     },
@@ -330,7 +336,20 @@
     {
         "class": "icon_file_type",
         "layer0.opacity": 1.0,
+        "layer0.tint": [138, 145, 159],
         "content_margin": [8, 8]
+    },
+
+    {
+        "class": "icon_file_type",
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.tint": [228, 231, 232]
+    },
+
+    {
+        "class": "icon_file_type",
+        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
+        "layer0.tint": [228, 231, 232]
     },
 
     {

@@ -309,7 +309,7 @@
 
     {
         "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["!selected", "hover"]}],
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "color": [128, 90, 255]
     },
 
@@ -337,7 +337,20 @@
     {
         "class": "icon_file_type",
         "layer0.opacity": 1.0,
+        "layer0.tint": [105, 98, 129],
         "content_margin": [8, 8]
+    },
+
+    {
+        "class": "icon_file_type",
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.tint": [128, 90, 255]
+    },
+
+    {
+        "class": "icon_file_type",
+        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
+        "layer0.tint": [48, 48, 127]
     },
 
     {
