@@ -335,6 +335,12 @@
 
     /** SIDEBAR DISCLOSURE CONTROLS (FOLDERS / GROUPS) **/
     {
+        "class": "icon_file_type",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+
+    {
         "class": "disclosure_button_control",
         "layer0.texture": "Theme - Freesia/assets/folder/closed.png",
         "layer0.opacity": 1.0,
@@ -353,6 +359,11 @@
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "layer0.texture": "Theme - Freesia/assets/folder/open.png"
+    },
+
+    {
+        "class": "icon_folder",
+        "content_margin": [0, 0]
     },
 
 
