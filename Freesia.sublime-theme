@@ -309,7 +309,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [228, 231, 232]
+        "color": [80, 200, 255]
     },
 
     {
@@ -343,7 +343,7 @@
     {
         "class": "icon_file_type",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [228, 231, 232]
+        "layer0.tint": [80, 200, 255]
     },
 
     {
@@ -364,7 +364,7 @@
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [228, 231, 232]
+        "layer0.tint": [80, 200, 255]
     },
 
     {
@@ -385,7 +385,7 @@
     {
         "class": "disclosure_button_control",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [231, 228, 232],
+        "layer0.tint": [80, 200, 255],
         "layer0.opacity": 1.0
     },
 
@@ -420,7 +420,7 @@
     {
         "class": "icon_folder_loading",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [231, 228, 232]
+        "layer0.tint": [80, 200, 255]
     },
 
 
@@ -481,7 +481,7 @@
         // Buttons
         "layer2.texture": "Theme - Freesia/assets/tabs/close/up.png",
         "layer2.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
-        "layer2.tint": [228, 231, 232],
+        "layer2.tint": [80, 200, 255],
         "layer2.inner_margin": [0, 0, 14, 12],
 
         "layer3.texture": "Theme - Freesia/assets/tabs/close/down.png",
@@ -857,7 +857,7 @@
         // Buttons
         "layer2.texture": "Theme - Freesia/assets/tabs/close/up.png",
         "layer2.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
-        "layer2.tint": [228, 231, 232],
+        "layer2.tint": [80, 200, 255],
         "layer2.inner_margin": [0, 0, 14, 12],
 
         "layer3.texture": "Theme - Freesia/assets/tabs/close/down.png",
@@ -888,7 +888,7 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         "layer0.opacity": 0.25,
-        "layer2.opacity": 0.7
+        "layer2.opacity": 1.0
     },
 
     // Hover close button (highlight)
@@ -959,7 +959,7 @@
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
         "layer0.opacity": 1.0,
-        "layer0.tint": [228, 231, 232]
+        "layer0.tint": [80, 200, 255]
     },
 
     {
@@ -975,7 +975,7 @@
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
         "layer0.opacity": 1.0,
-        "layer0.tint": [228, 231, 232]
+        "layer0.tint": [80, 200, 255]
     },
 
     {
@@ -991,7 +991,7 @@
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
         "layer0.opacity": 1.0,
-        "layer0.tint": [228, 231, 232]
+        "layer0.tint": [80, 200, 255]
     },
 
 

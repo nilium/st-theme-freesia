@@ -309,7 +309,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [0, 130, 166]
+        "color": [33, 168, 222]
     },
 
     {
@@ -343,7 +343,7 @@
     {
         "class": "icon_file_type",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [0, 130, 166]
+        "layer0.tint": [33, 168, 222]
     },
 
     {
@@ -364,7 +364,7 @@
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [0, 130, 166]
+        "layer0.tint": [33, 168, 222]
     },
 
     {
@@ -385,7 +385,7 @@
     {
         "class": "disclosure_button_control",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [0, 130, 166],
+        "layer0.tint": [33, 168, 222],
         "layer0.opacity": 1.0
     },
 
@@ -420,7 +420,7 @@
     {
         "class": "icon_folder_loading",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.tint": [0, 130, 166]
+        "layer0.tint": [33, 168, 222]
     },
 
 
@@ -959,7 +959,7 @@
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer0.tint": [0, 130, 166]
+        "layer0.tint": [33, 168, 222]
     },
 
     {
@@ -974,7 +974,7 @@
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer0.tint": [0, 130, 166]
+        "layer0.tint": [33, 168, 222]
     },
 
     {
@@ -989,7 +989,7 @@
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer0.tint": [0, 130, 166]
+        "layer0.tint": [33, 168, 222]
     },
 
 
