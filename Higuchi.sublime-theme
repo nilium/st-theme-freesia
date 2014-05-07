@@ -291,7 +291,7 @@
         "indent_top_level": false,
         "layer0.tint": [233, 232, 234],
         "layer0.opacity": 1.0,
-        "dark_content": true
+        "dark_content": false
     },
 
     {
@@ -602,7 +602,7 @@
         "row_padding": [4, 4],
         "layer0.tint": [233, 232, 234],
         "layer0.opacity": 1.0,
-        "dark_content": true
+        "dark_content": false
     },
 
     {
@@ -659,7 +659,7 @@
         "row_padding": [2, 0],
         "layer0.tint": [233, 232, 234],
         "layer0.opacity": 1.0,
-        "dark_content": true
+        "dark_content": false
     },
 
     {
