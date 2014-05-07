@@ -349,7 +349,7 @@
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "layer0.texture": "Theme - Freesia/assets/folder/closed.png",
         "layer0.opacity": 1.0,
         "layer0.tint": [144, 148, 152],
@@ -358,20 +358,65 @@
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
         "layer0.tint": [160, 163, 190]
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "attributes": ["expanded"],
         "layer0.texture": "Theme - Freesia/assets/folder/open.png"
     },
 
     {
-        "class": "icon_folder",
-        "content_margin": [0, 0]
+        "class": "disclosure_button_control",
+        "layer0.texture": "Theme - Freesia/assets/disclosure/closed.png",
+        "layer0.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.tint": [144, 148, 152],
+        "layer0.inner_margin": [8, 8],
+        "content_margin": [8, 8]
+    },
+
+    {
+        "class": "disclosure_button_control",
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.tint": [160, 163, 190],
+        "layer0.opacity": 1.0
+    },
+
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Freesia/assets/disclosure/open.png"
+    },
+
+    {
+        "class": "icon_folder_loading",
+        "layer0.texture": {
+            "keyframes": [
+                "Theme - Freesia/assets/loading/load-f01.png",
+                "Theme - Freesia/assets/loading/load-f02.png",
+                "Theme - Freesia/assets/loading/load-f03.png",
+                "Theme - Freesia/assets/loading/load-f04.png",
+                "Theme - Freesia/assets/loading/load-f05.png",
+                "Theme - Freesia/assets/loading/load-f06.png",
+                "Theme - Freesia/assets/loading/load-f07.png",
+                "Theme - Freesia/assets/loading/load-f08.png",
+                "Theme - Freesia/assets/loading/load-f09.png",
+                "Theme - Freesia/assets/loading/load-f10.png",
+                "Theme - Freesia/assets/loading/load-f11.png",
+                "Theme - Freesia/assets/loading/load-f12.png"
+            ]
+        },
+        "layer0.tint": [144, 148, 152],
+        "content_margin": [8, 8]
+    },
+
+    {
+        "class": "icon_folder_loading",
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.tint": [160, 163, 190]
     },
 
 
