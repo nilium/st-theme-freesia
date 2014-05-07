@@ -308,6 +308,12 @@
 
     {
         "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [228, 231, 232]
+    },
+
+    {
+        "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [228, 231, 232]
     },
@@ -330,11 +336,24 @@
     {
         "class": "icon_file_type",
         "layer0.opacity": 1.0,
+        "layer0.tint": [145, 138, 159],
         "content_margin": [8, 8]
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_file_type",
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.tint": [228, 231, 232]
+    },
+
+    {
+        "class": "icon_file_type",
+        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
+        "layer0.tint": [228, 231, 232]
+    },
+
+    {
+        "class": "icon_folder",
         "layer0.texture": "Theme - Freesia/assets/folder/closed.png",
         "layer0.opacity": 1.0,
         "layer0.tint": [138, 145, 159],
@@ -343,20 +362,65 @@
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
         "layer0.tint": [228, 231, 232]
     },
 
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "attributes": ["expanded"],
         "layer0.texture": "Theme - Freesia/assets/folder/open.png"
     },
 
     {
-        "class": "icon_folder",
-        "content_margin": [0, 0]
+        "class": "disclosure_button_control",
+        "layer0.texture": "Theme - Freesia/assets/disclosure/closed.png",
+        "layer0.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.tint": [145, 138, 159],
+        "layer0.inner_margin": [8, 8],
+        "content_margin": [8, 8]
+    },
+
+    {
+        "class": "disclosure_button_control",
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.tint": [231, 228, 232],
+        "layer0.opacity": 1.0
+    },
+
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Freesia/assets/disclosure/open.png"
+    },
+
+    {
+        "class": "icon_folder_loading",
+        "layer0.texture": {
+            "keyframes": [
+                "Theme - Freesia/assets/loading/load-f01.png",
+                "Theme - Freesia/assets/loading/load-f02.png",
+                "Theme - Freesia/assets/loading/load-f03.png",
+                "Theme - Freesia/assets/loading/load-f04.png",
+                "Theme - Freesia/assets/loading/load-f05.png",
+                "Theme - Freesia/assets/loading/load-f06.png",
+                "Theme - Freesia/assets/loading/load-f07.png",
+                "Theme - Freesia/assets/loading/load-f08.png",
+                "Theme - Freesia/assets/loading/load-f09.png",
+                "Theme - Freesia/assets/loading/load-f10.png",
+                "Theme - Freesia/assets/loading/load-f11.png",
+                "Theme - Freesia/assets/loading/load-f12.png"
+            ]
+        },
+        "layer0.tint": [145, 138, 159],
+        "content_margin": [8, 8]
+    },
+
+    {
+        "class": "icon_folder_loading",
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.tint": [231, 228, 232]
     },
 
 
@@ -882,83 +946,75 @@
 
 
     /** TAB SCROLLING JUNK **/
-    // Following is more or less as it was in the default theme because I'm lazy
     {
         "class": "scroll_tabs_left_button",
-        "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Theme - Default/arrow_left.png",
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Default/arrow_left_over.png",
-        "layer1.opacity": 0.0,
-        "layer1.inner_margin": 0
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Freesia/assets/tabctl/left.png",
+        "layer0.opacity": 0.5,
+        "layer0.tint": [145, 138, 159],
+        "layer0.inner_margin": 0
     },
 
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer1.opacity": 1.0
+        "layer0.opacity": 1.0,
+        "layer0.tint": [228, 231, 232]
     },
 
     {
         "class": "scroll_tabs_right_button",
-        "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Theme - Default/arrow_right.png",
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Default/arrow_right_over.png",
-        "layer1.opacity": 0.0,
-        "layer1.inner_margin": 0
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Freesia/assets/tabctl/right.png",
+        "layer0.opacity": 0.5,
+        "layer0.tint": [145, 138, 159],
+        "layer0.inner_margin": 0
     },
 
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer1.opacity": 1.0
+        "layer0.opacity": 1.0,
+        "layer0.tint": [228, 231, 232]
     },
 
     {
         "class": "show_tabs_dropdown_button",
-        "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Theme - Default/arrow_down.png",
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Default/arrow_down_over.png",
-        "layer1.opacity": 0.0,
-        "layer1.inner_margin": 0
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Freesia/assets/disclosure/open.png",
+        "layer0.opacity": 0.5,
+        "layer0.tint": [145, 138, 159],
+        "layer0.inner_margin": 0
     },
 
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer1.opacity": 1.0
+        "layer0.opacity": 1.0,
+        "layer0.tint": [228, 231, 232]
     },
 
 
     /** FOLD BUTTONS **/
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - Default/arrow_right.png",
-        "layer0.opacity": 1.0,
+        "layer0.texture": "Theme - Freesia/assets/disclosure/closed.png",
+        "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep"},
+        "layer0.tint": [180, 180, 180],
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Default/arrow_right_over.png",
-        "layer1.opacity": 0.0,
-        "layer1.inner_margin": 0,
-        "content_margin": [9, 7, 8, 6]
+        "content_margin": [8, 8]
     },
 
     {
         "class": "fold_button_control",
-        "attributes": ["hover"],
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0
+        "layer0.opacity": 1.0,
+        "attributes": ["hover"]
     },
 
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Default/arrow_down.png",
-        "layer1.texture": "Theme - Default/arrow_down_over.png"
+        "layer0.texture": "Theme - Freesia/assets/disclosure/open.png"
     },
 
 

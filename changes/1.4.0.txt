@@ -1,0 +1,14 @@
+Freesia - 1.4.0
+
+- Disclosure buttons have their own graphics.
+- Sidebar disclosure buttons are visible only on hover now.
+- Fold buttons now use the disclosure button graphics. They're tinted,
+  so there might be issues with themes where the gutter color is too
+  close to the fold button tint color. Nothing I use is, but we'll see.
+- Folder icons are always visible. Remains to be seen if ST3 will have
+  an option to disable icons entirely or if this is up to themes, so
+  there's no option for this in the theme right now.
+- Tab controls (i.e., the buttons on both sides of your tab strip) now
+  use variants of the disclosure buttons.
+- Kano's highlight color has been changed to an orange, similar to the
+  sidebar headings.
