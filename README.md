@@ -11,7 +11,7 @@ This theme is built from the default Sublime theme, but is inspired by my previo
 
 In addition, there are three other themes included in Freesia: Higuchi, Kano, and Void. Higuchi is a light theme while Kano is a medium-grey theme. Void, as the name suggests, is a very dark theme and mostly intended for working at night.
 
-The Freesia theme's included color schemes are _Proxy_ (medium), _Big Duo_(dark), _Triplet_ (dark), _Triplet Lite_ (medium-dark), _Kalopsia_ (dark), and _Kalopsia Darker_ (darker still). You can see screenshots of the color schemes themselves in the Color Schemes section below.
+The Freesia theme's included color schemes are _Proxy_ (medium), _Big Duo_ (dark), _Triplet_ (dark), _Triplet Lite_ (medium-dark), _Kalopsia_ (dark), and _Kalopsia Darker_ (darker still). You can see screenshots of the color schemes themselves in the Color Schemes section below.
 
 
 Installation
