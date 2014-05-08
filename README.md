@@ -41,8 +41,6 @@ Void - Really Dark Theme
 
 Although not completely black, Void is fairly close. In a lot of ways, it's also the spiritual successor to the Nil theme, since it brings back the blue tab highlight as well.
 
-The color scheme in the screenshot above is Kalopsia Darker. In addition, you can see the soft tab highlights you get by turning on the `freesia_soft_tab_marker`.
-
 
 Kano - Medium Theme
 ------------------------------------------------------------------------------
@@ -50,8 +48,6 @@ Kano - Medium Theme
 ![Kano Theme](https://github.com/nilium/st-theme-freesia/raw/master/screenshot-kano.png)
 
 The medium/middle-ground theme in Freesia is the Kano theme, which is mostly grey-ish blue, blue, and red. To use it, set your theme to `"Kano.sublime-theme"`.
-
-In addition, the color scheme included with the Kano theme is Proxy, which can be used by setting your `color_scheme` to `"Packages/Theme - Freesia/Proxy.tmTheme"`.
 
 
 Higuchi - Light Theme
@@ -75,7 +71,11 @@ There are currently a handful of options you should probably be aware of:
 
 - `freesia_large_tabs` and `freesia_small_tabs` — Only one of these should be set to true at a time. If both are set to true, small tabs win out. This simply changes the height of tabs and font size of tab labels. Does nothing special, but might be handy for people with lousy eyes and limited screen space, respectively.
 
+    ![Tab Size Comparisons](https://github.com/nilium/st-theme-freesia/raw/master/screenshot-tabsizes.png)
+
 - `freesia_soft_tab_marker` — If set to true, the colored status lines in tabs are blurred and softened a bit. It was kind of an accident originally, but it looked neat, so I made it optional.
+
+    ![Soft Tabs Enabled](https://github.com/nilium/st-theme-freesia/raw/master/screenshot-softtabs.png)
 
 - `freesia_borderless` — If true, removes the small border between the sidebar and content and between view groups.
 
