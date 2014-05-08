@@ -11,7 +11,7 @@ This theme is built from the default Sublime theme, but is inspired by my previo
 
 In addition, there are three other themes included in Freesia: Higuchi, Kano, and Void. Higuchi is a light theme while Kano is a medium-grey theme. Void, as the name suggests, is a very dark theme and mostly intended for working at night.
 
-The Freesia theme's included color schemes are _Proxy_ (medium), _Big Duo_ (medium-dark - pictured above), _Kalopsia_ (dark), and _Kalopsia Darker_ (darker still).
+The Freesia theme's included color schemes are _Proxy_ (medium), _Big Duo_(dark), _Triplet_ (dark), _Triplet Lite_ (medium-dark), _Kalopsia_ (dark), and _Kalopsia Darker_ (darker still). You can see screenshots of the color schemes themselves in the Color Schemes section below.
 
 
 Installation
@@ -86,12 +86,52 @@ There are currently a handful of options you should probably be aware of:
 - `freesia_large_hscroll` — And this is like the opposite of the last. It increases the size of the horizontal scrollbar to that of the default vertical scrollbar. In other words, if you find you need to click on the horizontal scrollbar, this option's for you and you can set it to true to get your big scrubby back.
 
 
+Color Schemes
+------------------------------------------------------------------------------
+
+The following color schemes come with Freesia because they're my personal color schemes and therefore it's handy to have them all in the same package. If you want to use any of them, you can set the `color_scheme` key in your user settings file to `Packages/Theme - Freesia/<theme-name-here>.tmTheme`. The theme's names and screenshots for each are provided below.
+
+#### Triplet
+
+![Triplet Color Scheme](https://github.com/nilium/st-theme-freesia/raw/master/cs-screens/triplet.png)
+
+A dark-ish color scheme and variant of Big Duo. Unlike Big Duo, it does not make use of background colors for entities and strings.
+
+#### Triplet Lite
+
+![Triplet Lite Color Scheme](https://github.com/nilium/st-theme-freesia/raw/master/cs-screens/triplet-lite.png)
+
+A lighter variant of Triplet.
+
+#### Proxy
+
+![Proxy Color Scheme](https://github.com/nilium/st-theme-freesia/raw/master/cs-screens/proxy.png)
+
+A medium grey-ish color scheme with a yellow-ish tint. Makes use of background colors when highlighting entities, like Big Duo.
+
+#### Kalopsia
+
+![Kalopsia Color Scheme](https://github.com/nilium/st-theme-freesia/raw/master/cs-screens/kalopsia.png)
+
+A dark red and blue color scheme. Intended for use with the Void theme and night time coding.
+
+#### Kalopsia Darker
+
+![Kalopsia Darker Color Scheme](https://github.com/nilium/st-theme-freesia/raw/master/cs-screens/kalopsia-darker.png)
+
+Same as Kalopsia, but slightly darker.
+
+#### Big Duo
+
+![Big Duo Color Scheme](https://github.com/nilium/st-theme-freesia/raw/master/cs-screens/big-duo.png)
+
+A dark-ish color scheme that has a fair amount of pink, purple, and makes use of background colors to highlight various important structural elements, including entities, strings, and so on. Intended to make it easy to spot thing when skimming and scrolling through source code.
+
+
 Notes
 ------------------------------------------------------------------------------
 
-The color scheme in the screenshot for Freesia above is Big Duo, which is included with this theme and the Nil theme, just because it's what I use and it's easier to copy the theme directory than it is to figure out where I put it last. So, you get it too! You can probably select this from your preferences menu or whatever the equivalent is on your platform.
-
-The font in the screenshot above is [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm) by Fabrizio Schiavi and it is awesome.
+The font in the screenshots above is [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm) by Fabrizio Schiavi and it is awesome.
 
 
 Thanks
