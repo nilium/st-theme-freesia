@@ -369,7 +369,7 @@
 
     {
         "class": "icon_folder",
-        "attributes": ["expanded"],
+        "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
         "layer0.texture": "Theme - Freesia/assets/folder/open.png"
     },
 
