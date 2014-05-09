@@ -1049,7 +1049,7 @@
     // Not even remotely sure where this is used either.
     {
         "class": "dialog",
-        "layer0.tint": [6, 6, 6],
+        "layer0.tint": [12, 12, 12],
         "layer0.opacity": 1.0
     },
 
