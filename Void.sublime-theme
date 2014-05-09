@@ -998,7 +998,7 @@
         "class": "fold_button_control",
         "layer0.texture": "Theme - Freesia/assets/disclosure/closed.png",
         "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep"},
-        "layer0.tint": [180, 180, 180],
+        "layer0.tint": [140, 140, 140],
         "layer0.inner_margin": 0,
         "content_margin": [8, 8]
     },

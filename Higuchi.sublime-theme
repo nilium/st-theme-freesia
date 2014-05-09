@@ -370,7 +370,7 @@
 
     {
         "class": "icon_folder",
-        "attributes": ["expanded"],
+        "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
         "layer0.texture": "Theme - Freesia/assets/folder/open.png"
     },
 
@@ -1002,7 +1002,7 @@
         "class": "fold_button_control",
         "layer0.texture": "Theme - Freesia/assets/disclosure/closed.png",
         "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep"},
-        "layer0.tint": [180, 180, 180],
+        "layer0.tint": [140, 140, 140],
         "layer0.inner_margin": 0,
         "content_margin": [8, 8]
     },
@@ -1054,7 +1054,7 @@
     // Not even remotely sure where this is used either.
     {
         "class": "dialog",
-        "layer0.tint": [233, 232, 234],
+        "layer0.tint": [212, 210, 214],
         "layer0.opacity": 1.0
     },
 
