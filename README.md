@@ -95,7 +95,7 @@ The following color schemes come with Freesia because they're my personal color 
 
 ![Triplet Color Scheme](https://github.com/nilium/st-theme-freesia/raw/master/cs-screens/triplet.png)
 
-A dark-ish color scheme and variant of Big Duo. Unlike Big Duo, it does not make use of background colors for entities and strings.
+A dark-ish color scheme and variant of Big Duo. Unlike Big Duo, it does not use background colors for entities and strings.
 
 #### Triplet Lite
 
@@ -125,7 +125,7 @@ Same as Kalopsia, but slightly darker.
 
 ![Big Duo Color Scheme](https://github.com/nilium/st-theme-freesia/raw/master/cs-screens/big-duo.png)
 
-A dark-ish color scheme that has a fair amount of pink, purple, and makes use of background colors to highlight various important structural elements, including entities, strings, and so on. Intended to make it easy to spot thing when skimming and scrolling through source code.
+A dark-ish color scheme that has a fair amount of pink, purple, and makes use of background colors to highlight various important structural elements, including entities, strings, and so on. Intended to make it easy to spot things when scrolling through source code.
 
 
 Notes
