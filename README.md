@@ -89,7 +89,7 @@ There are currently a handful of options you should probably be aware of:
 Color Schemes
 ------------------------------------------------------------------------------
 
-The following color schemes come with Freesia because they're my personal color schemes and therefore it's handy to have them all in the same package. If you want to use any of them, you can set the `color_scheme` key in your user settings file to `Packages/Theme - Freesia/<theme-name-here>.tmTheme`. The theme's names and screenshots for each are provided below.
+The following color schemes come with Freesia because they're my personal color schemes and therefore it's handy to have them all in the same package. If you want to use any of them, you can set the `color_scheme` key in your user settings file to `Packages/Theme - Freesia/<theme-name-here>.tmTheme`. The names and screenshots for each scheme are provided below.
 
 #### Triplet
 
